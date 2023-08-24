@@ -1,0 +1,101 @@
+Task1
+
+Last login: Mon Aug 21 22:17:10 on ttys031
+
+1. Открыть домашнюю директорию
+2. Определить имя папки, в которой вы находитесь
+
+tanyapetruchok@MacBook-Pro-Tana ~ % pwd
+/Users/tanyapetruchok
+tanyapetruchok@MacBook-Pro-Tana ~ % cd  /Users/tanyapetruchok/Documents/functional_testing
+
+3. Создать внутри этой папки каталог  с именем test1
+
+tanyapetruchok@MacBook-Pro-Tana functional_testing % mkdir test1
+
+4. Перейти в папку test1
+
+tanyapetruchok@MacBook-Pro-Tana functional_testing % cd test1
+
+5. Создать файл 1,2 и 3 внутри каталога test1
+6. Проверить содержимое каталога test1
+
+tanyapetruchok@MacBook-Pro-Tana test1 % touch 1.json 2.json 3.json
+tanyapetruchok@MacBook-Pro-Tana test1 % ls
+1.json,	2.json,	3.json
+
+7. Перейти в домашнюю директорию
+
+tanyapetruchok@MacBook-Pro-Tana test1 % cd - 
+~/Documents/functional_testing
+
+8. Создать папку test2 внутри домашней директории
+
+tanyapetruchok@MacBook-Pro-Tana functional_testing % mkdir test2
+
+9. Удалить папку test2
+
+tanyapetruchok@MacBook-Pro-Tana test1 % cd -
+~/Documents/functional_testing
+tanyapetruchok@MacBook-Pro-Tana functional_testing % rmdir test2
+
+10. Удалить файл 2 из папки test1
+
+tanyapetruchok@MacBook-Pro-Tana functional_testing % cd test1
+tanyapetruchok@MacBook-Pro-Tana test1 % rm 2.json
+
+11. Создать папку в домашней директории test3 и добавить в нее два файла
+
+tanyapetruchok@MacBook-Pro-Tana test1 % cd -
+~/Documents/functional_testing
+tanyapetruchok@MacBook-Pro-Tana functional_testing % mkdir test3 
+tanyapetruchok@MacBook-Pro-Tana functional_testing % cd test3
+tanyapetruchok@MacBook-Pro-Tana test3 % touch message.html message2.html
+
+12. Удалить папку test3
+
+tanyapetruchok@MacBook-Pro-Tana functional_testing % rm -rf test3
+
+13. Создать папку test4 в домашней директории
+
+tanyapetruchok@MacBook-Pro-Tana functional_testing % mkdir test4
+tanyapetruchok@MacBook-Pro-Tana functional_testing % cd test4
+tanyapetruchok@MacBook-Pro-Tana test4 % cd - 
+~/Documents/functional_testing
+
+14. Переместить файлы 1 и 3 из папки test1 в папку test4
+
+tanyapetruchok@MacBook-Pro-Tana functional_testing % mv test1/1.json test1/3.json test4
+tanyapetruchok@MacBook-Pro-Tana functional_testing % ls test4
+1.json	3.json
+
+15. Добавить в файл 1 три строки со словами line
+16. Посмотреть содержимое файла 1
+
+tanyapetruchok@MacBook-Pro-Tana functional_testing % cd test4 
+tanyapetruchok@MacBook-Pro-Tana test4 % nano 1.json
+tanyapetruchok@MacBook-Pro-Tana test4 % cat 1.json
+line
+line
+line
+
+17. Добавьте в файл 3 три строки со словами line
+18. Просмотрите содержимое двух файлов (1 и 3) сразу
+
+tanyapetruchok@MacBook-Pro-Tana test4 % nano 3.json
+tanyapetruchok@MacBook-Pro-Tana test4 % cat 1.json 3.json
+line
+line
+line
+line
+line
+line
+
+19. Используя один из редакторов замените все строки в файле 1
+
+tanyapetruchok@MacBook-Pro-Tana test4 % nano 1.json
+tanyapetruchok@MacBook-Pro-Tana test4 % cat 1.json
+line1
+line2
+line3
+tanyapetruchok@MacBook-Pro-Tana test4 % 
